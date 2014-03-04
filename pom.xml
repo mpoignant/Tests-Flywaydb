@@ -30,14 +30,15 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <url>jdbc:h2:file:target/testflywaydb</url>
-                    <user>sa</user>
+                    <url>jdbc:postgresql://localhost/zdd1</url>
+                    <user>postgres</user>
+                    <password>postgres</password>
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>com.h2database</groupId>
-                        <artifactId>h2</artifactId>
-                        <version>1.3.170</version>
+                        <groupId>postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>9.1-901.jdbc4</version>
                     </dependency>
                 </dependencies>
             </plugin>
